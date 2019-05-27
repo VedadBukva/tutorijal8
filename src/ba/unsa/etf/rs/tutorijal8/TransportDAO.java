@@ -54,9 +54,9 @@ public class TransportDAO {
             truncDriver = conn.prepareStatement("DELETE FROM Vozac");
             truncVozaciBuseva = conn.prepareStatement("DELETE FROM VozaciBuseva");
 
-            getDodjelaVozaci = conn.prepareStatement("SELECT DISTINCT v.vozac_id, v.ime, v.prezime, v.JMB, v.datum_rodjenja, v.datum_zaposljenja" +
+            getDodjelaVozaci = conn.prepareStatement("SELECT DISTINCT v.vozac_id, v.ime, v.prezime, v.JMB, v.datum_rodjenja, v.datum_zaposlenja" +
                     " FROM VozaciBuseva vd , Vozac v WHERE vd.driverId = v.vozac_id AND vd.busId=?");
-            dodajVouzacaBusa = conn.prepareStatement("INSERT INTO VozaciBuseva VALUES (?,?)");
+            dodajVouzacaBusa = conn.prepareStatement("INSERT INTO VozaciBuseva VALUES (?,?,null)");
 
         } catch (SQLException e) {
             //regenerisiBazu();
@@ -91,7 +91,39 @@ public class TransportDAO {
         return java.sql.Date.valueOf(dateToConvert);
     }
 
+    public void addDriver(String name, String surname, int jmb, LocalDate dateOfBirth, LocalDate hireDate) {
+        try {
+
+            ResultSet result = odrediIdDriveraUpit.executeQuery();
+            result.next();
+            Integer id = result.getInt(1);
+            if (id == null) {
+                id = 1;
+            }
+            addDriver.setInt(1, id);
+            addDriver.setString(2, name);
+            addDriver.setString(3, surname);
+            addDriver.setInt(4, jmb);
+            addDriver.setDate(5, Date.valueOf(dateOfBirth));
+            addDriver.setDate(6, Date.valueOf(hireDate));
+            addDriver.executeUpdate();
+
+            /*
+            SimpleDateFormat textFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String paramDateAsString = "2007-12-25";
+            Date myDate = null;
+            myDate = textFormat.parse(paramDateAsString);
+             */
+
+        } catch (SQLException e) {
+            //e.printStackTrace();
+            throw new IllegalArgumentException();
+        }
+    }
+
     public void addDriver(Driver driver){
+        ArrayList<Driver> drivers = getDrivers();
+        if(drivers.contains(driver)) throw new IllegalArgumentException("Taj vozač već postoji!");
         try {
             ResultSet rs = odrediIdDriveraUpit.executeQuery();
             int id = 1;
@@ -109,6 +141,8 @@ public class TransportDAO {
             throw new IllegalArgumentException("Taj vozač već postoji!");
         }
     }
+
+
     public void addBus(Bus bus) {
         try {
             ResultSet rs = odrediIdBusaUpit.executeQuery();
@@ -143,18 +177,45 @@ public class TransportDAO {
     }
 
     public ArrayList<Bus> getBusses() {
-        ArrayList<Bus> busevi = new ArrayList<Bus>();
-        ResultSet result = null;
+        ArrayList<Bus> buses = new ArrayList<>();
         try {
-            result = dajBusUpit.executeQuery();
-            Bus bus;
-            while ( ( bus = dajBusUpit(result) ) != null )
-                busevi.add(bus);
-            result.close();
+            ResultSet result = dajBusUpit.executeQuery();
+            while(result.next()) {
+                Integer id = result.getInt(1);
+                String maker = result.getString(2);
+                String series = result.getString(3);
+                int brojSjedista = result.getInt(4);
+                getDodjelaVozaci.setInt(1, id);
+
+                ResultSet ResultatDrugi = getDodjelaVozaci.executeQuery();
+                Driver driver;
+                ArrayList<Driver> drivers = new ArrayList<Driver>();
+                while (ResultatDrugi.next()) {
+                    Integer id_drivera = ResultatDrugi.getInt(1);
+                    String name = ResultatDrugi.getString(2);
+                    String surname = ResultatDrugi.getString(3);
+                    String jmb = ResultatDrugi.getString(4);
+                    Date birthDate = ResultatDrugi.getDate(5);
+                    Date hireDate = ResultatDrugi.getDate(6);
+                    drivers.add(new Driver(id_drivera, name, surname, jmb, birthDate.toLocalDate(), hireDate.toLocalDate()));
+                    //System.out.println("size:" + drivers.size());
+                }
+                if (drivers.size() == 1) {
+                    buses.add(new Bus(id, maker, series, brojSjedista, drivers.get(0), null));
+                }
+                else if (drivers.size() == 2) {
+                    buses.add(new Bus(id, maker, series, brojSjedista, drivers.get(0), drivers.get(1)));
+                }
+                else {
+                    buses.add(new Bus(id, maker, series, brojSjedista, null, null));
+                }
+
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return busevi;
+        return buses;
+
     }
 
     public LocalDate convertToLocalDateViaSqlDate(Date dateToConvert) {
