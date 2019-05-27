@@ -91,9 +91,4 @@ public class Driver {
         Driver driver = (Driver) o;
         return Objects.equals(getJMB(), driver.getJMB());
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getJMB());
-    }
 }
