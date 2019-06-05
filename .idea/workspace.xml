@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421d7fb7-fab3-48c2-b140-ac993b300cb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3f510ca2-8fec-4df6-bc99-974525e1e6da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3f510ca2-8fec-4df6-bc99-974525e1e6da/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+    <list default="true" id="421d7fb7-fab3-48c2-b140-ac993b300cb0" name="Default Changelist" comment="Zavrsne promjene">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d69da075-5e87-4936-8e02-052fc688192e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d69da075-5e87-4936-8e02-052fc688192e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baza.db" beforeDir="false" afterPath="$PROJECT_DIR$/baza.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,14 +53,14 @@
         <item name="baza.db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="Vozac: table" type="3d80ac25:SqliteImplModel$Table" />
+        <item name="dodjela: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="baza.db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="VozaciBuseva: table" type="3d80ac25:SqliteImplModel$Table" />
+        <item name="Vozac: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -75,19 +73,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1338">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="499">
+              <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d69da075-5e87-4936-8e02-052fc688192e/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1119">
-              <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+            <state relative-caret-position="372">
+              <caret line="300" column="48" selection-start-line="300" selection-start-column="48" selection-end-line="300" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9974#9982#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rs/tutorijal8/Zadatak2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="182">
+              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Bus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+            <state relative-caret-position="1700">
+              <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding>
                 <element signature="e#329#330#0" expanded="true" />
                 <element signature="e#370#371#0" expanded="true" />
@@ -144,42 +148,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1373#1374#0" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1650#1651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -189,6 +157,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dodajVouz</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -200,15 +173,16 @@
         <option value="$PROJECT_DIR$/test/ba/unsa/etf/rs/tutorijal8/PripremaTest.java" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Bus.java" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d69da075-5e87-4936-8e02-052fc688192e/console.sql" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-72" />
+    <option name="x" value="-73" />
     <option name="y" value="110" />
-    <option name="width" value="1242" />
-    <option name="height" value="673" />
+    <option name="width" value="1243" />
+    <option name="height" value="674" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -216,9 +190,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tutorijal8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tutorijal8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tutorijal8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tutorijal8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tutorijal8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tutorijal8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorijal8" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,7 +225,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558943443564" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559753221017" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -250,6 +245,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\tutorijal8" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -311,7 +309,9 @@
       <workItem from="1558612377332" duration="589000" />
       <workItem from="1558691080881" duration="466000" />
       <workItem from="1558785342735" duration="475000" />
-      <workItem from="1558942170970" duration="1214000" />
+      <workItem from="1558942170970" duration="2058000" />
+      <workItem from="1559562841533" duration="785000" />
+      <workItem from="1559748066420" duration="4016000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1557517574894</created>
@@ -334,43 +334,64 @@
       <option name="project" value="LOCAL" />
       <updated>1558442202231</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementirana provjera maticnog broja">
+      <created>1558943442252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558943442252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Izbrisan nepotreban hashcode">
+      <created>1558943521676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558943521676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Zavrsne promjene">
+      <created>1558943568294</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558943568294</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.22 at 18h 30m 21s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.22 at 18h 30m 55s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.22 at 18h 36m 31s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.22 at 18h 42m 09s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.22 at 18h 47m 36s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.23 at 14h 00m 05s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.24 at 11h 45m 04s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.24 at 11h 51m 11s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Tutorijal_8 - 2019.05.25 at 14h 00m 09s.xml">
-      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Tutorijal_8 - 2019.05.27 at 09h 43m 00s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.03 at 13h 54m 23s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 17h 21m 37s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 17h 28m 39s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 17h 31m 46s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 18h 36m 29s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 18h 38m 22s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 18h 39m 05s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 18h 40m 05s.xml">
+      <configuration name="All in Tutorijal_8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Tutorijal_8 - 2019.06.05 at 18h 41m 14s.xml">
       <configuration name="All in Tutorijal_8" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11669000" />
+    <option name="totallyTimeSpent" value="17314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,10 +403,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18791947" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18770227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -394,8 +415,8 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.3838527" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838188" weight="0.38292965" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,15 +425,15 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008091" side_tool="true" weight="0.40484428" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50161815" side_tool="true" weight="0.38292965" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32756633" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32756633" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.21677852" />
+      <window_info anchor="right" id="Database" order="5" weight="0.26860842" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -458,20 +479,13 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Resetovanje baze prije svakog testiranja" />
     <MESSAGE value="Prolaze PripremaTest i Zadatak1Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prolaze PripremaTest i Zadatak1Test" />
+    <MESSAGE value="Implementirana provjera maticnog broja" />
+    <MESSAGE value="Izbrisan nepotreban hashcode" />
+    <MESSAGE value="Zavrsne promjene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zavrsne promjene" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3f510ca2-8fec-4df6-bc99-974525e1e6da/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/Vozac">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d69da075-5e87-4936-8e02-052fc688192e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/VozaciBuseva/index/sqlite_autoindex_VozaciBuseva_1">
@@ -488,17 +502,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1338">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+    <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/Vozac">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        <state relative-caret-position="367">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
@@ -531,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rs/tutorijal8/Zadatak2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="182">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -541,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="1700">
+          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
           <folding>
             <element signature="e#329#330#0" expanded="true" />
             <element signature="e#370#371#0" expanded="true" />
@@ -576,12 +590,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proba (1).db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://dadb9c4f-aaff-4a36-a704-9b061b49a834/schema/main/table/dodjela">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dadb9c4f-aaff-4a36-a704-9b061b49a834/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/VozaciBuseva">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dadb9c4f-aaff-4a36-a704-9b061b49a834/schema/main/table/dodjela.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dadb9c4f-aaff-4a36-a704-9b061b49a834/schema/main/table/sqlite_sequence">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dadb9c4f-aaff-4a36-a704-9b061b49a834/schema/main/table/sqlite_sequence.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/Bus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d69da075-5e87-4936-8e02-052fc688192e/schema/main/table/dodjela">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d69da075-5e87-4936-8e02-052fc688192e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rs/tutorijal8/TransportDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1119">
-          <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+        <state relative-caret-position="372">
+          <caret line="300" column="48" selection-start-line="300" selection-start-column="48" selection-end-line="300" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9974#9982#0" expanded="true" />
           </folding>
         </state>
       </provider>
